@@ -31,6 +31,34 @@ const validationInfo2 = document.querySelector('.validation-info2')
 const downloadsBtn = document.getElementById('downloads')
 const downloadsTab = document.querySelector('.downloads-tab')
 
+
+const enBtn = document.querySelector('.encrypt-btn')
+const deBtn = document.querySelector('.decrypt-btn')
+
+enBtn.addEventListener('click', () => {
+    let file = fileInput.files[0]
+
+    let password1 = password.value;
+
+    if(!file){
+        alert('Add a file')
+    } else if(!password1){
+        alert('Enter Password')
+    }
+})
+
+deBtn.addEventListener('click', () => {
+    let file = fileInput2.files[0]
+
+    let password1 = password.value;
+
+    if(!file){
+        alert('Add a file')
+    } else if(!password1){
+        alert('Enter Password')
+    }
+})
+
 downloadsBtn.addEventListener('click', () => {
      encrypt.style.display = 'none'
     decrypt.style.display = 'none'
