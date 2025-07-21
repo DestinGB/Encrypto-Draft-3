@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Encrypto</h1>
+</div>
+
+        <nav>
+            <button class="nav active" id="encryptBtn">Encryption</button>
+            <button class="nav" id="decryptBtn">Decryption</button>
+            <button class="nav" id="downloads">Downloads</button>
+            <button class="nav" id="About">About</button>
+        </nav>
+    </header>
+    <main>
+        <div class="contents active-tab" id="encryptTab">
+            <div class="upload-tab">
+            <b>📁</b>
+            <h2>Click to select files or drag and drop</h2>
+            <p>supports all file formats</p>
+            <input type="file" id="fileInput">
+            </div>
+            <div class="file-info">
+                <div id="filename"></div>
+                <div id="filesize"></div>
+            </div>
+            <div class="validation-info"></div>
+            <input type="password" placeholder="Enter Password" class="Password">
+            <br><button class="encrypt-btn">Encrypt</button>
+        </div>
+
+              <div class="contents" id="decryptTab">
+                <div id="uploadTab">
+            <b>📁</b>
+            <h2>Click to select encrypted files or drag and drop</h2>
+            <p>supports encrypted files only</p>
+            <input type="file" id="fileInput2">
+            </div>
+            <div class="file-info">
+                <div id="filename2"></div>
+                <div id="filesize2"></div>
+            </div>
+            <div class="validation-info2"></div>
+            <input type="password" placeholder="Enter Decryption Password" id="Password">
+            <br><button class="decrypt-btn">Decrypt</button>
+        
+            </div>
+
+            
+    <div class="Information" id="Information">
+        <b title="Back" id="back">&#x2190;</b>
+        <h1 style="font-weight: 600; font-size: 2.5em;">Encrypto</h1> <br>
+        <p>Encrypto is an easy fix solution to securing and storing of sensitive data at your convinience</p>
+ <br>       <h4 style="text-decoration: underline; color: #18ce; font-weight: 800;">How To Use</h4>
+        <br><p>Simply click the 📁 icon and upload the file you'd like to Encrypt/Decrypt. The system will condense or decondense your files with the correct password initially given when uploading. A download icon is available whenever you wish to retrieve your files.</p>
+        <p>If something isn't functioning properly <a href="#">click here</a></p>
+        <br>
+                <h3>Founders</h3>
+            <p class="items">Destin Banda</p>
+            <p class="items">Carlos Sinjani</p>
+    </div>
+
+      <div class="downloads-tab">
+        <h2>Downloads</h2>
+        <div class="down">
+           <img src="Images/Downloading.png">
+            <p>Your haven't made any downloads yet</p>
+        </div>
+    </div>
+            
+    </main>
+    <script src="Encrypto.js"></script>
+</body>
+</html>
